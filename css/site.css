@@ -360,6 +360,8 @@ html:not(.js) .cpi-call{opacity:1;transform:none}
 .lp-step--slow::before{content:"slow";position:absolute;right:12px;top:-20px;color:#cfc9be;font-size:12px;font-style:italic}
 .lp-back{display:grid;gap:4px;padding:12px 14px;background:#B8965A;color:#1c1f26;border-radius:2px}
 .lp-back span{font-size:.95rem}.lp-back em{font-style:normal;font-weight:600;font-size:.9rem}
+/* opened "Read in full": show the full quote only, not the extract above it */
+.extract:has(.v8-more[open]) .extract__pull{display:none}
 /* compact contact call-to-action (homepage) */
 .mp-cta{border-top:1px solid #2c2f36}.mp-cta__in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding-block:clamp(28px,4vw,48px)}
 .mp-cta__t{margin:0;font:400 clamp(22px,2.4vw,30px)/1.25 var(--font-display);color:#FAF8F4;max-width:40ch}
@@ -367,6 +369,8 @@ html:not(.js) .cpi-call{opacity:1;transform:none}
 /* multi-page additions */
 #site-nav a[aria-current=page]{color:var(--accent-text,#8C7448);box-shadow:inset 0 -2px 0 #8C7448}
 .mp-more{margin:18px 0 0}
+.v8-record--page{margin-top:8px}.v8-record--page .v8-record__in{margin-top:0}
+.ins-card:has(details[open]) .ins-card__s{display:none}
 .intel .intel-more{margin:4px 0 0}.intel .intel-more a{color:#E2C277}
 .ins-head{background:#1c1f26;color:#FAF8F4}
 .ins-head h1{color:#FAF8F4;font-size:clamp(2.2rem,4.2vw,54px);line-height:1.05;max-width:22ch;margin:0}
