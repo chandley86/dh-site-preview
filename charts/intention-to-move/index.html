@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1C1F26">
+<title>Intent to move</title>
+<style>
+  @font-face { font-family: "Fraunces Variable"; font-style: normal; font-weight: 100 900; font-display: swap;
+    src: url("../fonts/fraunces-latin-full-normal.woff2") format("woff2");
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+  @font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/inter-latin-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/inter-latin-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+  :root { color-scheme: dark; --ease: cubic-bezier(.22,1,.36,1); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #1C1F26; color: #F6F4EF; overflow-x: clip; }
+  body { min-height: 100svh; font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .slide {
+    min-height: 100svh; display: flex; flex-direction: column; gap: clamp(14px, 2vh, 22px);
+    width: min(1180px, 100%); margin: 0 auto; padding: clamp(20px, 3vh, 36px) 16px clamp(18px, 3vh, 28px);
+    background:
+      radial-gradient(70% 55% at 88% 0%, rgba(184,150,90,.10), transparent 60%),
+      #1C1F26;
+  }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; }
+  .logo { height: 22px; width: auto; max-width: min(280px, 58%); display: block; }
+  .replay {
+    min-height: 44px; padding: 0 14px; border: 1px solid #3a3e46; border-radius: 2px;
+    background: transparent; color: #D9BE8A; font: 500 14px/1 Inter, sans-serif; cursor: pointer;
+  }
+  .replay:hover { border-color: #B8965A; }
+  .replay:focus-visible, button:focus-visible { outline: 2px solid #D9BE8A; outline-offset: 2px; }
+  h1 {
+    margin: 0; max-width: 18em;
+    font-family: "Fraunces Variable", Georgia, serif; font-weight: 380; font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 30, "WONK" 0;
+    font-size: clamp(1.75rem, 3vw, 2.75rem); line-height: 1.08; letter-spacing: -.024em;
+  }
+  .sub { margin: 0; max-width: 62ch; font: 400 15px/1.55 Inter, sans-serif; color: #cfc9be; }
+  .src { margin: 0; font: 400 10.5px/1.45 Inter, sans-serif; color: #B7B1A6; }
+  .stage { min-width: 0; }
+  @media (prefers-reduced-motion: reduce) { .replay { display: none; } }
+</style>
+</head>
+<body>
+<main class="slide">
+  <div class="top">
+    <img class="logo" src="../../logo/dh-wordmark-stone.svg" alt="Dalton Handley" width="306" height="22">
+    <button class="replay" type="button">Replay</button>
+  </div>
+  <h1>Intent to move</h1>
+  <p class="sub">Share of BD, marketing and communications professionals by whether they intend to move.</p>
+  
+<figure class="donut" data-intent-donut>
+  <div class="tabs" role="tablist" aria-label="Slice intent to move"><button type="button" role="tab" data-group="all" aria-selected="true">All</button><button type="button" role="tab" data-group="firm" aria-selected="false">Firm type</button><button type="button" role="tab" data-group="level" aria-selected="false">Level</button><button type="button" role="tab" data-group="sector" aria-selected="false">Sector</button><button type="button" role="tab" data-group="function" aria-selected="false">Function</button><button type="button" role="tab" data-group="city" aria-selected="false">City</button></div>
+  <div class="opts" data-opts hidden></div>
+  <div class="stage">
+    <div class="ring">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Intent to move" data-ring>
+        <g data-arcs></g>
+      </svg>
+      <p class="centre"><b><span data-moved>15</span><span class="pct">%</span></b><i>changed firm in the past year</i></p>
+    </div>
+    <ul class="key" data-key><li><span style="background:#B8965A"></span><em data-seg="Actively looking">18%</em>Actively looking</li><li><span style="background:#D9BE8A"></span><em data-seg="Open but not looking">59%</em>Open but not looking</li><li><span style="background:#8E887C"></span><em data-seg="Not looking">23%</em>Not looking</li></ul>
+  </div>
+  <script type="application/json" data-intent>{"all":{"label":"All respondents","moved":15,"segments":[{"label":"Actively looking","value":18,"color":"#B8965A"},{"label":"Open but not looking","value":59,"color":"#D9BE8A"},{"label":"Not looking","value":23,"color":"#8E887C"}]},"groups":[{"id":"firm","label":"Firm type","options":[{"label":"Big 8 law","moved":7,"segments":[{"label":"Actively looking","value":22,"color":"#B8965A"},{"label":"Open but not looking","value":58,"color":"#D9BE8A"},{"label":"Not looking","value":20,"color":"#8E887C"}]},{"label":"Global firms","moved":12,"segments":[{"label":"Actively looking","value":17,"color":"#B8965A"},{"label":"Open but not looking","value":58,"color":"#D9BE8A"},{"label":"Not looking","value":25,"color":"#8E887C"}]},{"label":"National firms","moved":22,"segments":[{"label":"Actively looking","value":19,"color":"#B8965A"},{"label":"Open but not looking","value":57,"color":"#D9BE8A"},{"label":"Not looking","value":24,"color":"#8E887C"}]}]},{"id":"level","label":"Level","options":[{"label":"Coordinator to adviser","moved":14,"segments":[{"label":"Actively looking","value":21,"color":"#B8965A"},{"label":"Open but not looking","value":63,"color":"#D9BE8A"},{"label":"Not looking","value":16,"color":"#8E887C"}]},{"label":"Manager and senior manager","moved":15,"segments":[{"label":"Actively looking","value":19,"color":"#B8965A"},{"label":"Open but not looking","value":58,"color":"#D9BE8A"},{"label":"Not looking","value":23,"color":"#8E887C"}]},{"label":"Head of and above","moved":16,"segments":[{"label":"Actively looking","value":13,"color":"#B8965A"},{"label":"Open but not looking","value":54,"color":"#D9BE8A"},{"label":"Not looking","value":33,"color":"#8E887C"}]}]},{"id":"sector","label":"Sector","options":[{"label":"Law","moved":17,"segments":[{"label":"Actively looking","value":20,"color":"#B8965A"},{"label":"Open but not looking","value":57,"color":"#D9BE8A"},{"label":"Not looking","value":23,"color":"#8E887C"}]},{"label":"Accounting","moved":6,"segments":[{"label":"Actively looking","value":9,"color":"#B8965A"},{"label":"Open but not looking","value":60,"color":"#D9BE8A"},{"label":"Not looking","value":31,"color":"#8E887C"}]},{"label":"Engineering","moved":10,"segments":[{"label":"Actively looking","value":26,"color":"#B8965A"},{"label":"Open but not looking","value":61,"color":"#D9BE8A"},{"label":"Not looking","value":13,"color":"#8E887C"}]}]},{"id":"function","label":"Function","options":[{"label":"Business development","moved":15,"segments":[{"label":"Actively looking","value":17,"color":"#B8965A"},{"label":"Open but not looking","value":64,"color":"#D9BE8A"},{"label":"Not looking","value":19,"color":"#8E887C"}]},{"label":"Marketing and communications","moved":12,"segments":[{"label":"Actively looking","value":27,"color":"#B8965A"},{"label":"Open but not looking","value":56,"color":"#D9BE8A"},{"label":"Not looking","value":17,"color":"#8E887C"}]},{"label":"Clients and pursuits","moved":20,"segments":[{"label":"Actively looking","value":9,"color":"#B8965A"},{"label":"Open but not looking","value":55,"color":"#D9BE8A"},{"label":"Not looking","value":36,"color":"#8E887C"}]}]},{"id":"city","label":"City","options":[{"label":"Sydney","moved":20,"segments":[{"label":"Actively looking","value":19,"color":"#B8965A"},{"label":"Open but not looking","value":61,"color":"#D9BE8A"},{"label":"Not looking","value":20,"color":"#8E887C"}]},{"label":"Melbourne","moved":9,"segments":[{"label":"Actively looking","value":21,"color":"#B8965A"},{"label":"Open but not looking","value":52,"color":"#D9BE8A"},{"label":"Not looking","value":27,"color":"#8E887C"}]},{"label":"Brisbane","moved":14,"segments":[{"label":"Actively looking","value":10,"color":"#B8965A"},{"label":"Open but not looking","value":66,"color":"#D9BE8A"},{"label":"Not looking","value":24,"color":"#8E887C"}]},{"label":"Singapore and Hong Kong","moved":14,"segments":[{"label":"Actively looking","value":28,"color":"#B8965A"},{"label":"Open but not looking","value":50,"color":"#D9BE8A"},{"label":"Not looking","value":22,"color":"#8E887C"}]}]}]}</script>
+</figure>
+<style>
+  .donut { display: grid; gap: 16px; margin: 0; min-width: 0; }
+  .tabs, .opts { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tabs button, .opts button {
+    min-height: 44px; padding: 0 14px; border: 1px solid #3a3e46; border-radius: 2px;
+    background: transparent; color: #e7e2d8; font: 500 14px/1 Inter, sans-serif; cursor: pointer;
+  }
+  .tabs button[aria-selected="true"], .opts button[aria-pressed="true"] { border-color: #B8965A; color: #D9BE8A; }
+  .stage { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: clamp(16px, 3vw, 40px); align-items: center; }
+  .ring { position: relative; width: min(100%, 280px); margin-inline: auto; }
+  .ring svg { width: 100%; height: auto; display: block; }
+  .centre { position: absolute; inset: 22%; margin: 0; display: grid; align-content: center; justify-items: center; text-align: center; pointer-events: none; }
+  .centre b { font: 380 clamp(2rem, 4vw, 2.75rem)/1 "Fraunces Variable", Georgia, serif; color: #D9BE8A; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .pct { font-size: .55em; margin-left: .04em; }
+  .centre i { font: 500 13px/1.35 Inter, sans-serif; font-style: normal; color: #e7e2d8; max-width: 14ch; }
+  .key { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .key li { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font: 400 15px/1.4 Inter, sans-serif; color: #e7e2d8; }
+  .key span { width: 12px; height: 12px; flex: 0 0 12px; }
+  .key em { font-style: normal; font-variant-numeric: tabular-nums; color: #D9BE8A; min-width: 3.2ch; }
+  @media (max-width: 720px) {
+    .stage { grid-template-columns: 1fr; }
+    .centre i { max-width: 16ch; }
+  }
+</style>
+  <p class="src">Source: Dalton Handley market data</p>
+</main>
+<script>
+(function () {
+  var root = document.querySelector("[data-intent-donut]");
+  var data = JSON.parse(root.querySelector("[data-intent]").textContent);
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var arcs = root.querySelector("[data-arcs]");
+  var ring = root.querySelector("[data-ring]");
+  var movedEl = root.querySelector("[data-moved]");
+  var opts = root.querySelector("[data-opts]");
+  var NS = "http://www.w3.org/2000/svg";
+  var current = data.all;
+  var shown = data.all.segments.map(function (s) { return Object.assign({}, s, {value: reduce ? s.value : 0}); });
+  var shownMoved = reduce ? data.all.moved : 0;
+  var frame = 0;
+  var timer = 0;
+  var paused = false;
+  var queue = [{group: "all", slice: data.all}];
+  data.groups.forEach(function (g) {
+    g.options.forEach(function (opt, i) { queue.push({group: g.id, slice: opt, optIndex: i}); });
+  });
+  var qi = 0;
+
+  function ease(t) {
+    var p = Math.min(1, Math.max(0, t));
+    return 1 - Math.pow(1 - p, 3);
+  }
+  function paint(segs, moved) {
+    while (arcs.firstChild) arcs.removeChild(arcs.firstChild);
+    var total = segs.reduce(function (a, s) { return a + Math.max(0, s.value); }, 0) || 1;
+    var acc = 0, cx = 100, cy = 100, r = 72;
+    segs.forEach(function (s) {
+      var frac = Math.max(0, s.value) / total;
+      if (frac <= 0.001) { acc += frac; return; }
+      var a0 = acc * Math.PI * 2 - Math.PI / 2;
+      var a1 = (acc + frac) * Math.PI * 2 - Math.PI / 2;
+      var large = frac > 0.5 ? 1 : 0;
+      var path = document.createElementNS(NS, "path");
+      path.setAttribute("d", "M " + (cx + r * Math.cos(a0)) + " " + (cy + r * Math.sin(a0)) + " A " + r + " " + r + " 0 " + large + " 1 " + (cx + r * Math.cos(a1)) + " " + (cy + r * Math.sin(a1)));
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", s.color);
+      path.setAttribute("stroke-width", "22");
+      path.setAttribute("stroke-linecap", "butt");
+      arcs.appendChild(path);
+      acc += frac;
+    });
+    movedEl.textContent = String(Math.round(moved));
+    segs.forEach(function (s) {
+      var em = root.querySelector('[data-seg="' + s.label + '"]');
+      if (em) em.textContent = Math.round(s.value) + "%";
+    });
+    var slice = current.label === "All respondents" ? "all respondents" : current.label;
+    ring.setAttribute("aria-label", "Intent to move, " + slice + ": " + segs.map(function (s) { return s.label + " " + Math.round(s.value) + " percent"; }).join(", ") + ". " + Math.round(moved) + " percent changed firm in the past year.");
+  }
+  function go(next, ms) {
+    current = next;
+    var from = shown.map(function (s) { return s.value; });
+    var fromMoved = shownMoved;
+    if (reduce || ms <= 0) {
+      shown = next.segments.map(function (s) { return Object.assign({}, s); });
+      shownMoved = next.moved;
+      paint(shown, shownMoved);
+      return;
+    }
+    cancelAnimationFrame(frame);
+    var start = performance.now();
+    function tick(now) {
+      var t = ease(Math.min(1, (now - start) / ms));
+      shown = next.segments.map(function (s, i) { return Object.assign({}, s, {value: from[i] + (s.value - from[i]) * t}); });
+      shownMoved = fromMoved + (next.moved - fromMoved) * t;
+      paint(shown, shownMoved);
+      if (t < 1) frame = requestAnimationFrame(tick);
+    }
+    frame = requestAnimationFrame(tick);
+  }
+  function selectTab(id) {
+    root.querySelectorAll("[data-group]").forEach(function (b) {
+      b.setAttribute("aria-selected", String(b.dataset.group === id));
+    });
+  }
+  function showOptions(group, index, ms) {
+    opts.replaceChildren();
+    opts.hidden = false;
+    group.options.forEach(function (opt, i) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = opt.label;
+      btn.setAttribute("aria-pressed", String(i === index));
+      btn.addEventListener("click", function () {
+        stop();
+        opts.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+        btn.setAttribute("aria-pressed", "true");
+        go(opt, 900);
+      });
+      opts.appendChild(btn);
+    });
+    go(group.options[index], ms);
+  }
+  function showItem(item, ms) {
+    selectTab(item.group);
+    if (item.group === "all") {
+      opts.replaceChildren();
+      opts.hidden = true;
+      go(data.all, ms);
+      return;
+    }
+    var group = data.groups.filter(function (g) { return g.id === item.group; })[0];
+    showOptions(group, item.optIndex || 0, ms);
+  }
+  function stop() {
+    paused = true;
+    clearTimeout(timer);
+  }
+  function arm() {
+    if (reduce || paused) return;
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      if (paused || document.hidden) { arm(); return; }
+      qi = (qi + 1) % queue.length;
+      showItem(queue[qi], 900);
+      arm();
+    }, qi === 0 ? 3200 : 2800);
+  }
+  root.querySelectorAll("[data-group]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      stop();
+      var id = b.dataset.group || "all";
+      qi = Math.max(0, queue.findIndex(function (item) { return item.group === id && (id === "all" || item.optIndex === 0); }));
+      showItem(queue[qi] || {group: "all", slice: data.all}, 900);
+    });
+  });
+  document.querySelector(".replay").addEventListener("click", function () {
+    if (reduce) return;
+    paused = false;
+    qi = 0;
+    showItem(queue[0], 1600);
+    arm();
+  });
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) clearTimeout(timer);
+    else arm();
+  });
+  paint(shown, shownMoved);
+  go(data.all, reduce ? 0 : 1600);
+  arm();
+})();
+</script>
+</body>
+</html>
